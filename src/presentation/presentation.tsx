@@ -1,16 +1,15 @@
-import * as S from './presentation'
+import * as S from './presentation';
+import { Links } from '../components/links';
 
 function Presentation(){
     return(
-    <S.wrapper>
-        <S.content>
-            <S.links>
-                
-            </S.links>
-            <S.title>Marcelo Martins</S.title>
-            <S.subTitle>Front-end developer</S.subTitle>
-        </S.content>
-    </S.wrapper>
+        <S.Wrapper>
+        <S.Content>
+            <Links justify='start'/>
+            <S.Title>Marcelo Martins</S.Title>
+            <S.SubTitle>Front-end developer</S.SubTitle>
+        </S.Content>
+        </S.Wrapper>
     )
 }
 
