@@ -26,7 +26,7 @@ export const Title = styled.h2`
 export const SubTitle = styled.h1`
     font-size: 5rem;
     font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 
     justify-self: end;
 `

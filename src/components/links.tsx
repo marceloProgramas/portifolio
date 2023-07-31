@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-const Icon = styled.img`
-    width: 6rem;
+const Icon = styled.img<{width:string}>`
+    width: ${props => props.width}rem;
 `
 
-function Link({src, alt, url, }: {src:string, alt:string, url:string}){
+function Link({src, alt, url, width}: {src:string, alt:string, url:string, width?:string}){
     return(
         <a href={url} target='_blank'>
-            <Icon src = {src} alt = {alt}/>
+            <Icon src = {src} alt = {alt} width = {width||'6'}/>
         </a>
     )
 }
@@ -28,12 +28,12 @@ function Links({justify, color}:{justify:string, color?:string}){
     return(
         <Wrapper justify={justify}>
             <Link
-            src={color?"github lt.svg/":'/github.svg'}
+            src={color=='white'?"github lt.svg":'github.svg'}
             alt='link github'
             url='https://github.com/marceloProgramas'
             />
             <Link
-            src={color?'linkedin lt.svg':'/linkedin.svg'}
+            src={color=='white'?'linkedin lt.svg':'/linkedin.svg'}
             alt='link linkedin'
             url='https://www.linkedin.com/in/marcelo-martins-2b2a94241/'
             />
