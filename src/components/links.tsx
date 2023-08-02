@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
-const Icon = styled.img<{width:string}>`
-    width: ${props => props.width}rem;
+
+const Icon = styled.img<{width?:string}>`
+    width: ${props => props.width || 6}rem;
+    @media (max-width: 570px) {
+        width: ${props => props.width || 4}rem;
+    }
 `
 
 function Link({src, alt, url, width}: {src:string, alt:string, url:string, width?:string}){
     return(
         <a href={url} target='_blank'>
-            <Icon src = {src} alt = {alt} width = {width||'6'}/>
+            <Icon src = {src} alt = {alt} width = {width}/>
         </a>
     )
 }

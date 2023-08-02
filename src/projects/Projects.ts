@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const wrapper = styled.div<{color:string}>`
-    width: 100vw;
-    min-height: 40rem;
+    min-height: 70rem;
 
     padding-block: 5em;
 
@@ -13,11 +12,28 @@ export const wrapper = styled.div<{color:string}>`
     gap: 2.5rem;
     align-items: center;
     justify-content: center;
+
+    @media( max-width: 768px){
+        flex-direction: column;
+        gap: 3rem;
+    }
 `
 
 export const text = styled.p<{color:string}>`
     color: ${props => props.color};
     font-family: 'Merriweather Sans', sans-serif;
-    font-size:2.5rem;
-    max-width: 45rem;
+    font-size:3rem;
+    max-width: 55rem;
+
+    @media( max-width: 1024px){
+        font-size: 2.5rem;
+    }
+
+    @media( max-width: 768px){
+        font-size: 2rem;
+    }
+
+    @media(max-width: 550px){
+        max-width: 30rem;
+    }
 `

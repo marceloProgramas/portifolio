@@ -5,9 +5,9 @@ import FootBar from './FootBar/FootBar.tsx'
 function App() {
   return (
     <>
-      <Presentation/>
-      <Projects/>
-      <FootBar/>
+      <Presentation />
+      <Projects />
+      <FootBar />
     </>
   )
 }
