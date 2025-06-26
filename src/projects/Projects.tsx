@@ -31,8 +31,9 @@ function Projects(){
             width = '45'
             text = "Calculadora de investimento utilizável para grandes ou pequenos períodos e para investimentos de diferentes tamanhos."
             />
+            
+            
         </>
     )
 }
-
 export default Projects
