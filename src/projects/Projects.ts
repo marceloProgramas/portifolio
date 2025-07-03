@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const wrapper = styled.div<{color:string}>`
+export const wrapper = styled.div<{color:string}, {dir:string}>`
     min-height: 70rem;
 
     padding-block: 5em;
@@ -8,7 +8,7 @@ export const wrapper = styled.div<{color:string}>`
     background-color: ${props => props.color};
 
     display: flex;
-    flex-direction: row;
+    flex-direction: ${props => props.dir};
     gap: 2.5rem;
     align-items: center;
     justify-content: center;
