@@ -39,7 +39,7 @@ function Links({justify, color}:{justify:string, color?:string}){
             <Link
             src={color=='white'?'linkedin lt.svg':'/linkedin.svg'}
             alt='link linkedin'
-            url='https://www.linkedin.com/in/marcelo-martins-2b2a94241/'
+            url='https://www.linkedin.com/in/marcelo-martins-farinasso-junior'
             />
         </Wrapper>
     )
